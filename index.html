@@ -1,0 +1,66 @@
+<iframe style="width: 100vw; height: 100vh; border: none; background: #111214;" srcdoc="
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    margin: 0;
+    background-color: #111214; /* РўРѕС‡РЅС‹Р№ С‚РµРјРЅС‹Р№ С†РІРµС‚ СЌРєСЂР°РЅР° Р·Р°РіСЂСѓР·РєРё Р“РµРЅС€РёРЅР° */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .loading-bar {
+    display: flex;
+    gap: 12px;
+  }
+  .element {
+    width: 40px;
+    height: 40px;
+    opacity: 0.15; /* Р’ РІС‹РєР»СЋС‡РµРЅРЅРѕРј СЃРѕСЃС‚РѕСЏРЅРёРё РѕРЅРё РїРѕС‡С‚Рё СЃР»РёРІР°СЋС‚СЃСЏ СЃ С„РѕРЅРѕРј */
+    filter: grayscale(100%) brightness(0.3);
+    animation: genshinWave 2.8s infinite ease-in-out;
+    object-fit: contain;
+    transform: translateZ(0); /* РђРїРїР°СЂР°С‚РЅРѕРµ СѓСЃРєРѕСЂРµРЅРёРµ РґР»СЏ РїР»Р°РІРЅРѕСЃС‚Рё */
+  }
+  
+  /* РРґРµР°Р»СЊРЅС‹Р№ С‚Р°Р№РјРёРЅРі РІРѕР»РЅС‹ СЃРІРµС‚Р° */
+  .element:nth-child(1) { animation-delay: 0.0s; }
+  .element:nth-child(2) { animation-delay: 0.15s; }
+  .element:nth-child(3) { animation-delay: 0.3s; }
+  .element:nth-child(4) { animation-delay: 0.45s; }
+  .element:nth-child(5) { animation-delay: 0.6s; }
+  .element:nth-child(6) { animation-delay: 0.75s; }
+  .element:nth-child(7) { animation-delay: 0.9s; }
+
+  @keyframes genshinWave {
+    0%, 100% { 
+        opacity: 0.15; 
+        filter: grayscale(100%) brightness(0.3) drop-shadow(0 0 0 rgba(255,255,255,0)); 
+    }
+    15%, 25% { 
+        opacity: 1; 
+        filter: grayscale(0%) brightness(1.2) drop-shadow(0px 0px 10px rgba(255,255,255,0.6)); 
+    }
+    40%, 90% { 
+        opacity: 0.15; 
+        filter: grayscale(100%) brightness(0.3) drop-shadow(0 0 0 rgba(255,255,255,0)); 
+    }
+  }
+</style>
+</head>
+<body>
+  <div class='loading-bar'>
+    <img class='element' src='https://img.genially.com/64233afb55129a0017751c8e/3299389e-e5e3-4588-8f27-f1ab2e484f55.png' alt='Anemo'>
+    <img class='element' src='https://img.genially.com/64233afb55129a0017751c8e/5dff4a5a-19c2-4ec8-a405-76c5aaabbf03.png' alt='Geo'>
+    <img class='element' src='https://img.genially.com/64233afb55129a0017751c8e/99dea80b-8329-453a-bd14-2e12cc24b264.png' alt='Electro'>
+    <img class='element' src='https://img.genially.com/64233afb55129a0017751c8e/0b30e44a-7a32-4544-8c3e-42d08428ad00.png' alt='Dendro'>
+    <img class='element' src='https://img.genially.com/64233afb55129a0017751c8e/b79f04ad-5757-439c-9082-8274de4db23a.png' alt='Hydro'>
+    <img class='element' src='https://img.genially.com/64233afb55129a0017751c8e/cca562e6-da1c-4090-aa0d-ad873a4d9c45.png' alt='Pyro'>
+    <img class='element' src='https://img.genially.com/64233afb55129a0017751c8e/2777dab3-2687-4413-a417-b77b607bd303.png' alt='Cryo'>
+  </div>
+</body>
+</html>
+"></iframe>
